@@ -153,7 +153,7 @@ impl WebSocket {
         }));
 
         Ok(Self {
-            id: Arc::new(atomic::AtomicUsize::new(1)),
+            id: Arc::new(atomic::AtomicUsize::new(0)),
             url,
             pending,
             subscriptions,
